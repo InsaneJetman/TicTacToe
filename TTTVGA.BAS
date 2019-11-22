@@ -1,7 +1,7 @@
 ' Tic-Tac-Toe
 '
 ' A simple implementation of the game with VGA graphics.
-' Compatible with QuickBasic
+' Designed for QuickBASIC
 '
 ' Syntax: TTTVGA [search depth]
 ' Computer plays optimally (i.e. no mistakes, it cannot lose) for search depth >= 6

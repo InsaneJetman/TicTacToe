@@ -1,7 +1,7 @@
 ' Tic-Tac-Toe
 '
 ' A simple implementation of the game.
-' Compatible with QuickBasic and FreeBASIC
+' Compatible with QuickBASIC and FreeBASIC
 '
 ' Syntax: TTT [search depth]
 ' Computer plays optimally (i.e. no mistakes, it cannot lose) for search depth >= 6
