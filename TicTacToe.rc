@@ -1,0 +1,26 @@
+FB_PROGRAM_ICON ICON "TicTacToe.ico"
+1 VERSIONINFO
+FILEVERSION 0,1,0,0
+PRODUCTVERSION 0,1,0,0
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+BEGIN
+BLOCK "StringFileInfo"
+BEGIN
+    BLOCK "080904e4"
+    BEGIN
+        VALUE "CompanyName", "InsaneJetman"
+        VALUE "FileDescription", "Tic-Tac-Toe"
+        VALUE "FileVersion", "0.1"
+        VALUE "InternalName", "TicTacToe"
+        VALUE "LegalCopyright", "©2019 InsaneJetman"
+        VALUE "OriginalFilename", "TicTacToe.exe"
+        VALUE "ProductName", "Tic-Tac-Toe"
+        VALUE "ProductVersion", "0.1"
+    END
+END
+BLOCK "VarFileInfo"
+BEGIN
+    VALUE "Translation", 0x0809 0x04E4
+END
+END

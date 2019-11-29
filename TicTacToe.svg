@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17in" height="14in" enable-background="new" version="1.1" viewBox="0 0 1224 1008"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+  <defs>
+    <linearGradient id="blues" x2="576" y2="576" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#91bff5" offset="0"/>
+      <stop stop-color="#5292d6" offset=".5"/>
+      <stop stop-color="#192587" offset="1"/>
+    </linearGradient>
+    <linearGradient id="greys" y1="576" y2="648" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" offset="0"/>
+      <stop stop-color="#aaa" offset="1"/>
+    </linearGradient>
+    <pattern id="hatch" width="128" height="128" patternUnits="userSpaceOnUse">
+      <image width="128" height="128" image-rendering="optimizeSpeed" preserveAspectRatio="none" xlink:href="hatch.png"/>
+    </pattern>
+    <pattern id="grain" width="256" height="72" patternUnits="userSpaceOnUse">
+      <image width="256" height="72" image-rendering="optimizeSpeed" preserveAspectRatio="none" xlink:href="grain.png"/>
+    </pattern>
+    <filter id="raised" color-interpolation-filters="sRGB">
+      <feMorphology in="SourceAlpha" radius="1"/>
+      <feGaussianBlur stdDeviation="1"/>
+      <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.5 -0.032578434"/>
+      <feDiffuseLighting surfaceScale="2">
+        <feDistantLight azimuth="225" elevation="45"/>
+      </feDiffuseLighting>
+      <feGaussianBlur stdDeviation="0.3"/>
+      <feComposite in2="SourceGraphic" k1="0.7083" k3="0.5" operator="arithmetic" result="dull"/>
+    </filter>
+    <filter id="sunken" color-interpolation-filters="sRGB">
+      <feMorphology in="SourceAlpha" radius="1"/>
+      <feGaussianBlur stdDeviation="1"/>
+      <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.5 -0.032578434"/>
+      <feDiffuseLighting surfaceScale="-2">
+        <feDistantLight azimuth="225" elevation="45"/>
+      </feDiffuseLighting>
+      <feGaussianBlur stdDeviation="0.3"/>
+      <feComposite in2="SourceGraphic" k1="0.7083" k3="0.5" operator="arithmetic" result="dull"/>
+    </filter>
+    <filter id="whiteout" color-interpolation-filters="sRGB">
+      <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+    </filter>
+    <filter id="multiply" color-interpolation-filters="sRGB">
+      <feBlend in2="BackgroundImage" mode="multiply"/>
+    </filter>
+    <clipPath id="impossible">
+      <rect transform="rotate(-45)" x="-36" y="263.294" width="72" height="288"/>
+    </clipPath>
+    <clipPath id="oclip">
+      <path d="m0 0-72 72h144v-144h-144v36z"/>
+    </clipPath>
+    <path id="penstroke" d="m0 216c-24-144 12-288-12-432-1.9728-11.8367 22.0272-11.8367 24 0 12 72-18 360-12 432z" stroke-linejoin="round" stroke-width="2"/>
+    <path id="xline1" d="m-12-54c-4.45669-11.1417 19.5433-11.1417 24 0 12 30-12 78-6 108 2.35339 11.767-9.64661 11.767-12 0-6-30 6-78-6-108z"/>
+    <path id="xline2" d="m-12-54c-4.45669-11.1417 19.5433-11.1417 24 0 12 30-4.5 78-6 108-0.599253 11.9851-12.8975 11.9664-12 0 2.25-30 6-78-6-108z"/>
+    <path id="ostart1" d="m0 48a48 48 0 0 1-48-48 48 48 0 0 1 48-48 12 12 0 0 1 0 24 24 24 0 0 0-24 24 24 30 0 0 0 24 30z"/>
+    <path id="ostart2" d="m0 48a48 48 0 0 1-48-48 48 48 0 0 1 48-48 30 30 0 0 1 30 30 12 12 0 0 1-24 0 6 6 0 0 0-6-6 24 24 0 0 0-24 24 24 30 0 0 0 24 30z"/>
+    <path id="oend1" d="m-24 0a24 30 0 0 0 24 30 36 30 0 0 0 36-30 36 30 0 0 0-36-30 6 6 0 0 1 0-12 48 42 0 0 1 48 42 48 48 0 0 1-48 48 48 48 0 0 1-48-48z"/>
+    <path id="oend2" d="m-24 0a24 30 0 0 0 24 30 36 30 0 0 0 36-30 24 30 0 0 0-24-30 18 12 0 0 0-18 12 6 6 0 0 1-12 0 30 24 0 0 1 30-24 34 42 0 0 1 36 42 48 48 0 0 1-48 48 48 48 0 0 1-48-48z"/>
+  </defs>
+  <sodipodi:namedview inkscape:document-units="pt" inkscape:zoom="0.75" inkscape:cx="384" inkscape:cy="912" borderlayer="true" inkscape:pagecheckerboard="true">
+    <inkscape:grid type="xygrid" id="maingrid" units="pt" spacingx="12" spacingy="12" empspacing="6" />
+  </sodipodi:namedview>
+  <g inkscape:groupmode="layer" id="layer1" inkscape:label="Background">
+    <rect width="1224" height="1008" fill="#000"/>
+    <rect width="576" height="576" fill="url(#blues)"/>
+    <rect id="status" y="576" width="576" height="72" fill="url(#greys)"/>
+    <use transform="translate(0,72)" xlink:href="#status"/>
+  </g>
+  <g inkscape:groupmode="layer" id="layer2" inkscape:label="Shading" filter="url(#multiply)">
+    <rect width="576" height="576" fill="url(#hatch)"/>
+    <rect y="576" width="576" height="144" fill="url(#grain)" opacity=".5"/>
+  </g>
+  <g inkscape:groupmode="layer" id="layer3" inkscape:label="Board">
+    <rect x="156" y="588" width="72" height="48" rx="6" ry="6"/>
+    <rect x="324" y="588" width="108" height="48" rx="6" ry="6" fill="#fa0" filter="url(#raised)"/>
+    <rect x="456" y="588" width="108" height="48" rx="6" ry="6" fill="#0a0" filter="url(#raised)"/>
+    <text x="22.558241" y="624" font-family="Stencil" font-size="36">depth</text>
+    <rect x="206" y="590" width="20" height="20" rx="4" ry="4" fill="#0a0" filter="url(#raised)"/>
+    <rect x="206" y="614" width="20" height="20" rx="4" ry="4" fill="#a00" filter="url(#raised)"/>
+    <path id="signs" d="m210 624h12m-6-30v12m-6-6h12" fill="none" stroke="#fff" stroke-width="2"/>
+    <text id="wait" x="378" y="624" dx="0 -3 1 1" fill="#fff" font-family="Stencil" font-size="36" text-align="center" text-anchor="middle">wait</text>
+    <text id="play" x="510" y="624" dx="0 0 2 -1" fill="#fff" font-family="Stencil" font-size="36" text-align="center" text-anchor="middle">play</text>
+    <g id="horizontal" filter="url(#raised)">
+      <use id="boardstroke" fill="#fa0" stroke="#fa0" transform="translate(216,288)" xlink:href="#penstroke"/>
+      <use transform="rotate(180,288,288)" xlink:href="#boardstroke"/>
+    </g>
+    <g filter="url(#raised)">
+      <use transform="rotate(90,288,288)" xlink:href="#boardstroke"/>
+      <use transform="rotate(270,288,288)" xlink:href="#boardstroke"/>
+    </g>
+    <use clip-path="url(#impossible)" xlink:href="#horizontal"/>
+  </g>
+  <g inkscape:groupmode="layer" id="layer4" inkscape:label="Drawing">
+    <rect x="12" y="660" width="264" height="48" rx="6" ry="6"/>
+    <rect x="324" y="660" width="108" height="48" rx="6" ry="6" fill="#f50" filter="url(#sunken)"/>
+    <rect x="456" y="660" width="108" height="48" rx="6" ry="6" fill="#0a0" filter="url(#sunken)"/>
+    <rect x="254" y="662" width="20" height="20" rx="4" ry="4" fill="#0a0" filter="url(#sunken)"/>
+    <rect x="254" y="686" width="20" height="20" rx="4" ry="4" fill="#a00" filter="url(#sunken)"/>
+    <g transform="translate(36,700)" font-family="Digiface" font-size="44.4463" text-align="center" text-anchor="middle">
+      <text fill="#a0f">0</text>
+      <text x="32" fill="#0af">1</text>
+      <text x="64" fill="#0f0">2</text>
+      <text x="96" fill="#af0">3</text>
+      <text x="128" fill="#ff0">4</text>
+      <text x="160" fill="#fa0">5</text>
+      <text x="192" fill="#f50">6</text>
+    </g>
+    <use transform="translate(49,73)" xlink:href="#signs"/>
+    <use transform="translate(1,73)" xlink:href="#wait"/>
+    <use transform="translate(1,73)" xlink:href="#play"/>
+    <g id="dline" fill="#a0f" stroke="#a0f" filter="url(#raised)">
+      <use transform="translate(900,252) rotate(45) scale(1, 1.414214)" xlink:href="#penstroke"/>
+      <use transform="translate(900,756) rotate(-45) scale(1, 1.414214)" xlink:href="#penstroke"/>
+    </g>
+    <g id="vline" fill="#a0f" stroke="#a0f" filter="url(#raised)"><use transform="translate(612,252)" xlink:href="#penstroke"/></g>
+    <g id="hline" fill="#a0f" stroke="#a0f" filter="url(#raised)"><use transform="translate(288,756) rotate(90)" xlink:href="#penstroke"/></g>
+    <g id="x1" fill="#a00" transform="translate(72,936)">
+      <g filter="url(#raised)"><use transform="rotate(45)" xlink:href="#xline1"/></g>
+      <g filter="url(#raised)"><use transform="rotate(-45)" xlink:href="#xline1"/></g>
+    </g>
+    <g id="x2" fill="#a00" transform="translate(720,72)">
+      <g filter="url(#raised)"><use transform="rotate(45)" xlink:href="#xline1"/></g>
+      <g filter="url(#raised)"><use transform="rotate(-45)" xlink:href="#xline2"/></g>
+    </g>
+    <g id="x3" fill="#a00" transform="translate(864,72)">
+      <g filter="url(#raised)"><use transform="rotate(45)" xlink:href="#xline2"/></g>
+      <g filter="url(#raised)"><use transform="rotate(-45)" xlink:href="#xline1"/></g>
+    </g>
+    <g id="x4" fill="#a00" transform="translate(720,216)">
+      <g filter="url(#raised)"><use transform="rotate(45)" xlink:href="#xline2"/></g>
+      <g filter="url(#raised)"><use transform="rotate(-45)" xlink:href="#xline2"/></g>
+    </g>
+    <g id="o1" fill="#0a0" transform="translate(360,936)">
+      <use filter="url(#raised)" xlink:href="#ostart1"/>
+      <use filter="url(#raised)" clip-path="url(#oclip)" xlink:href="#oend1"/>
+    </g>
+    <g id="o2" fill="#0a0" transform="translate(1152,288)">
+      <use filter="url(#raised)" xlink:href="#ostart1"/>
+      <use filter="url(#raised)" clip-path="url(#oclip)" xlink:href="#oend2"/>
+    </g>
+    <g id="o3" fill="#0a0" transform="translate(1008,432)">
+      <use filter="url(#raised)" xlink:href="#ostart2"/>
+      <use filter="url(#raised)" clip-path="url(#oclip)" xlink:href="#oend1"/>
+    </g>
+    <g id="o4" fill="#0a0" transform="translate(1152,432)">
+      <use filter="url(#raised)" xlink:href="#ostart2"/>
+      <use filter="url(#raised)" clip-path="url(#oclip)" xlink:href="#oend2"/>
+    </g>
+    <g filter="url(#whiteout)">
+      <use transform="translate(72,0)" xlink:href="#dline"/>
+      <use transform="translate(0,504)" xlink:href="#vline"/>
+      <use transform="translate(0,72)" xlink:href="#hline"/>
+      <use transform="translate(144,0)" xlink:href="#x1"/>
+      <use transform="translate(0,864)" xlink:href="#x2"/>
+      <use transform="translate(0,864)" xlink:href="#x3"/>
+      <use transform="translate(0,576)" xlink:href="#x4"/>
+      <use transform="translate(144,0)" xlink:href="#o1"/>
+      <use transform="translate(0,432)" xlink:href="#o2"/>
+      <use transform="translate(0,144)" xlink:href="#o3"/>
+      <use transform="translate(0,144)" xlink:href="#o4"/>
+    </g>
+  </g>
+</svg>

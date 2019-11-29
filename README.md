@@ -6,3 +6,6 @@ Here is a set of simple tic-tac-toe games implemented in BASIC:
 * __TTTVGA__
   * VGA Graphics
   * QuickBASIC only
+* __TicTacToe__
+  * 32-bit Graphics
+  * FreeBASIC only
