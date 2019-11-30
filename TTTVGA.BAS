@@ -39,10 +39,13 @@ Const UPDATEDELAY = .4
 Randomize Timer
 Dim Shared brick(0 To 128) As Long
 Dim Shared symbol(0 To 512, 0 To 1) As Long
-Dim Shared triple(0 To 7), state(0 To 1), player, difficulty
+Dim Shared triple(0 To 7), bias(0 To 8), state(0 To 1), player, difficulty
 triple(0) = &o7: triple(1) = &o70: triple(2) = &o700
 triple(3) = &o111: triple(4) = &o222: triple(5) = &o444
 triple(6) = &o124: triple(7) = &o421
+bias(0) = 3: bias(1) = 2: bias(2) = 3
+bias(3) = 2: bias(4) = 4: bias(5) = 2
+bias(6) = 3: bias(7) = 2: bias(8) = 3
 If Command$ = "" Then difficulty = 6 Else difficulty = Val(Command$)
 If difficulty > 9 Then difficulty = 9
 
@@ -302,26 +305,27 @@ End Sub
 Sub PlayAI (delay#)
     t# = Timer + delay#
     score = -10
-    For mask = 1 To &o400 Step 0
+    mask = 1
+    For move = 0 To 8
         If ((state(0) Or state(1)) And mask) = 0 Then
             eval = Evaluate(state(player) Or mask, state(1 - player), difficulty)
             If eval > score Then
                 score = eval
                 moves = mask
-                n = 1
+                n = bias(move)
             ElseIf eval = score Then
                 moves = moves Or mask
-                n = n + 1
+                n = n + bias(move)
             End If
         End If
         mask = mask * 2
-    Next mask
+    Next move
 
     n = Int(Rnd * n)
     mask = 1
     For move = 0 To 8
         If (moves And mask) <> 0 Then
-            If n = 0 Then
+            If n < bias(move) Then
                 While Timer < t#: Wend
                 state(player) = state(player) Or mask
                 DrawSymbol player, move
@@ -329,7 +333,7 @@ Sub PlayAI (delay#)
                 player = 1 - player
                 Exit For
             End If
-            n = n - 1
+            n = n - bias(move)
         End If
         mask = mask * 2
     Next move

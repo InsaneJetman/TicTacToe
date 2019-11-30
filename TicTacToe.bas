@@ -77,6 +77,7 @@ Dim Shared imgO(3) As Any Ptr
 Const As Double UPDATE_DELAY = .4
 Const As Integer MAX_LEVEL = 6
 Dim Shared As Integer triple(7) = { &o7, &o70, &o700, &o111, &o222, &o444, &o124, &o421 }
+Dim Shared As Integer bias(8) = { 3, 2, 3, 2, 4, 2, 3, 2, 3 }
 Dim Shared As Integer state(1), player, difficulty, gameOver
 
 Initialize
@@ -408,27 +409,28 @@ Function AI () As Integer
     Dim As Integer stateBoard = state(0) Or state(1)
     Dim As Integer score = -10
     Dim As Integer n, moves, mask, eval
-    For mask = 1 To &o400 Step 0
+    mask = 1
+    For move As Integer = 0 To 8
         If (stateBoard And mask) = 0 Then
             eval = Evaluate(state(player) Or mask, state(1 - player), difficulty)
             If eval > score Then
                 score = eval
                 moves = mask
-                n = 1
+                n = bias(move)
             ElseIf eval = score Then
                 moves Or= mask
-                n += 1
+                n += bias(move)
             End If
         End If
         mask Shl= 1
-    Next mask
+    Next move
 
     n = Int(Rnd * n)
     mask = 1
     For move As Integer = 0 To 8
         If (moves And mask) <> 0 Then
-            If n = 0 Then Return move
-            n -= 1
+            If n < bias(move) Then Return move
+            n -= bias(move)
         End If
         mask Shl= 1
     Next move
