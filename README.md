@@ -78,6 +78,7 @@ __Notes__:
 
 --------------------------------------------------------------------------------
 
-Source code cand be found at: https://github.com/InsaneJetman/tic-tac-toe
-
-Binaries can be downloaded from: https://github.com/InsaneJetman/tic-tac-toe/releases/latest
+| Links            | URL                                                         |
+| ---------------- | ----------------------------------------------------------- |
+| Project Homepage | https://github.com/InsaneJetman/tic-tac-toe                 |
+| Downloads        | https://github.com/InsaneJetman/tic-tac-toe/releases/latest |
