@@ -115,7 +115,7 @@ Sub DrawBackground
     Cls
 
     ' draw 5x5 panel
-    ReDim bigbrick(0 To 3600) As Long
+    ReDim bigbrick(0 To 3200) As Long
     For y = 0 To 159 Step 32
     For x = 0 To 159 Step 32
         Put (x, y), brick, Xor
